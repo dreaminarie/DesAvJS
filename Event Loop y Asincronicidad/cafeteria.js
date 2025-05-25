@@ -44,13 +44,13 @@ async function procesarOrden(orden) {
         const tiempoPreparacion = Math.floor(Math.random() * 4000) + 2000;
 
         // el tiempo que se tarde se va a mostrar en la consola
-        console.log(`El pedido #${orden.id} tardará ${tiempoPreparacion / 1000} segundos en completarse.`);
+        console.log(`El pedido #${orden.id} tardará ${Math.floor(tiempoPreparacion / 1000)} segundos en completarse.`);
 
         // se va a crear una promise que se resuelve después del tiempo aleatorio con un setTimeout
         await new Promise(resolve => {
             setTimeout(() => {
                 // lo que se va a mostrar en pantalla cuando se complete la preparación (se agote el setTimeout)
-                console.log(`Se completó el pedido #${orden.id}.`);
+                console.log(`Terminó la preparación del pedido #${orden.id}.`);
                 resolve(); //se resuelve la promise, permite seguir con el await
             }, tiempoPreparacion);
         });
