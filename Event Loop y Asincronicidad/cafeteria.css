@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #9C7048;
+    color: #2F1B14; 
+    padding: 20px; 
+    margin: 0;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#addOrdenBoton {
+    background-color: #7F4629;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#addOrdenBoton:hover {
+    background-color: #B7793D;
+}
+
+#ListaOrdenes {
+    background-color: #FFFAF0; 
+    border-radius: 8px;
+    padding: 20px; 
+    list-style-type: none;
+    margin: 0;
+    min-height: 100px;
+}
+
+#ListaOrdenes li {
+    background-color: #FFF8DC;
+    border: 2px solid #DEB887;
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    margin-bottom: 10px; 
+    font-size: 16px;
+}
+
+#ListaOrdenes li[style*="green"] {
+    background-color: #F0FFF0;
+    border-color: #90EE90;
+}
+
+#ListaOrdenes:empty::before {
+    content: "No se han hecho pedidos aún. ¡Agrega el primero! ☕";
+    color: #8B4513;
+    display: block; 
+    text-align: center;
+    padding: 20px;
+}
