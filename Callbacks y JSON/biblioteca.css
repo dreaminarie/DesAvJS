@@ -1,0 +1,19 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #f5f5dc;
+    color: #8b4513;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #654321;
+    border-bottom: 2px solid #E0325A;
+    padding-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+    color: #a0522d;
+}
